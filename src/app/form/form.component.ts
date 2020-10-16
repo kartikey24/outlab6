@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { WebInterfaceService } from '../web-interface.service';
 
 @Component({
@@ -10,9 +10,9 @@ import { WebInterfaceService } from '../web-interface.service';
 export class FormComponent implements OnInit {
 
   feedbackEditor = new FormGroup({
-    name: new FormControl(''),
-    email: new FormControl(''),
-    feedback: new FormControl(''),
+    name: new FormControl('',Validators.required),
+    email: new FormControl('',Validators.required),
+    feedback: new FormControl('',Validators.required),
     comment: new FormControl('')
   })
 

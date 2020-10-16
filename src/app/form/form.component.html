@@ -11,9 +11,9 @@
 
     <label>
         Feedback:
-        <input type="radio" formControlName="feedback" value="great">Great
-        <input type="radio" formControlName="feedback" value="okay">Okay
-        <input type="radio" formControlName="feedback" value="notGood">Not good
+        <input type="radio" formControlName="feedback" value="Great">Great
+        <input type="radio" formControlName="feedback" value="Okay">Okay
+        <input type="radio" formControlName="feedback" value="Not good">Not good
     </label>
 
     <label>
@@ -21,7 +21,7 @@
         <textarea formControlName="comment"></textarea>
     </label>
 
-    <button type="submit">Submit Feedback</button>
+    <button type="submit" [disabled]="!feedbackEditor.valid">Submit Feedback</button>
 </form>
 
 <p>{{feedbackEditor.get('name').value}}</p>
