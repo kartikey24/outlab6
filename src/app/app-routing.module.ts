@@ -5,7 +5,8 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 
 const routes: Routes = [
   {path: 'form', component: FormComponent},
-  {path: 'contact', component: ContactPageComponent}
+  {path: 'contact', component: ContactPageComponent},
+  {path: '**', redirectTo: 'contact'}
 ];
 
 @NgModule({
