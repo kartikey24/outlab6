@@ -2,3 +2,24 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+div {
+	line-height: 120%;
+}
+
+li {
+	margin: 15px 0;
+}
+
+label {
+	margin: 15px 0;
+}
+
+name {
+	color: blue;
+	font-size: 25px;
+}
+
+field {
+	text-align: centre;
+}
