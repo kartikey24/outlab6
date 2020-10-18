@@ -26,9 +26,15 @@ export class FormComponent implements OnInit {
     this.setInitialValues();
   }
 
+  onSuccess(): void{
+    alert('Your feedback was submitted successfully :)')
+    this.feedbackEditor.reset();
+  }
+
   onSubmit(): void {
     console.log(this.feedbackEditor.value);
-    this.webInterfaceService.submitFormData(this.feedbackEditor.value).subscribe(() => alert('Your feedback was submitted successfully :)'));
+    this.webInterfaceService.submitFormData(this.feedbackEditor.value).subscribe(() => this.onSuccess());
+    
   }
 
 }
