@@ -1,5 +1,22 @@
-label {
-    display: block;
+
+
+form-style-3 {
+	max-width: 450px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.form-style-3 label {
+	display:block;
+	margin-bottom: 10px;
+}
+
+.form-style-3 label > span {
+	float: left;
+	width: 100px;
+	color: #F072A9;
+	font-weight: bold;
+	font-size: 13px;
+	text-shadow: 1px 1px 1px #fff;
 }
 
 button[type=submit] {
