@@ -1,9 +1,13 @@
-<h2>Contact Us!</h2>
+<body>
+<h2 class="center">Contact Us!</h2>
 
-<ul class="members">
+<ul class="members" class="content">
 	<li *ngFor="let member of members">
 		<name><div><span>name: </span><field>{{member.name}}</field></div></name>
-		<div><span>contact: </span><field>{{member.contact}}</field></div>
+		<div><span>roll: </span><field>{{member.roll}}</field></div>
 		<div><span>email: </span><field>{{member.email}}</field></div>
 	</li>
 </ul>
+
+<div class="card-deck"></div>
+</body>

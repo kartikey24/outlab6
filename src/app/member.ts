@@ -1,10 +1,10 @@
 export interface Member {
 	name: string;
-	contact: number;
+	roll: string;
 	email: string;
 }
 
 export const MEMBERS : Member[]= [
-	{name: 'Kartikey Gupta', contact: 7721916236, email: '190050044@iitb.ac.in'},
-	{name: 'Amit Kumar Mallik', contact: 6301897318, email: '19D070007@iitb.ac.in'}
+	{name: 'Kartikey Gupta', roll: '190050044', email: '190050044@iitb.ac.in'},
+	{name: 'Amit Kumar Mallik', roll: '19D070007', email: '19D070007@iitb.ac.in'}
 ];

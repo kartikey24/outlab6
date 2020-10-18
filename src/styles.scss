@@ -3,9 +3,6 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-div {
-	line-height: 120%;
-}
 
 li {
 	margin: 15px 0;
@@ -22,4 +19,34 @@ name {
 
 field {
 	text-align: centre;
+}
+
+span {
+	width: 100px;
+}
+
+.content {
+	max-width: 500px;
+	margin: 0px auto; 
+}
+
+.center {
+	position: relative;
+    text-align: center;
+}
+ .wide {
+ 	width: 500px;
+}
+
+label {
+    display: block;
+}
+
+.card-deck {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
